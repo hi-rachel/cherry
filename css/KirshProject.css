@@ -43,6 +43,7 @@ ul, li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 .flexR {
@@ -101,7 +102,7 @@ ul, li {
     display: flex;
     align-items: center;
     font-size: 15px;
-    word-break: keep-all;
+    /* word-break: keep-all; */
 }
 
 .like, .shoppingBag, .myPage, .language {
@@ -109,12 +110,17 @@ ul, li {
 }
 
 #nav li.depth1 {
+    align-items: center;
     height: 50px;
     line-height: 50px;
-    margin: 0 70px 0 0;
+    margin: 0 60px 0 0;
     display: inline-flex;
     position: relative;
     z-index: 50;
+}
+
+.keep {
+    white-space: pre;
 }
 
 #nav li.depth1::after {
@@ -202,7 +208,8 @@ footer a:hover {
 } */
 
 #mainCherry {
-    overflow: hidden;
+    /* overflow: hidden; */
+    width: 100%;
     height: 988px;
     background-color: #F792A8;
     padding-top: 50px;
@@ -240,7 +247,7 @@ footer a:hover {
 
 #backgroundCherry {
     padding-top: 100px;
-    width: 1500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
