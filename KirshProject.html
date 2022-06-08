@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/cherry/css/KirshProject.css">
+    <link rel="stylesheet" type="text/css" href="/cherry/css/KirshSlideLB.css">
+    <link rel="stylesheet" type="text/css" href="/cherry/css/KirshSlideBest.css">
+    <title>Kirsh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="flexNav">
+            <div class="flexL">
+                <div class="logo">
+                    <a href="/">
+                        KIRSH®
+                    </a>
+                </div>
+                <div class="search-wrapper">
+                    <form id="searchForm" method="get" action="search.php">
+                        <input id="searchType" type="text" name="search" maxlength="30" autocomplete="on"
+                            placeholder="Kirsh New Items">
+                        <span id="searchButton"><img class=button src="/cherry/images/search.svg"></span>
+                </div>
+                </form>
+            </div>
+            <div class="flexR">
+                <ul id="nav">
+                    <li class="depth1">
+                        <a href="/">Kirsh Pocket</a>
+                        <ul class="depth2">
+                            <li><a href="/">ALL</a></li>
+                            <li><a href="/">Shoulder Bag</a></li>
+                            <li><a href="/">Backpack</a></li>
+                            <li><a href="/">Tote Bag</a></li>
+                            <li><a href="/">Small Bag</a></li>
+                            <li><a href="/">Wallets</a></li>
+                            <li><a href="/">ALL</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="/">Cherry Line</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="/">New</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="/">Shop</a>
+                        <ul class="depth2">
+                            <li><a href="/">ALL</a></li>
+                            <li><a href="/">Cherry Line</a></li>
+                            <li><a href="/">New</a></li>
+                            <li><a href="/">Outer</a></li>
+                            <li><a href="/">Top</a></li>
+                            <li><a href="/">Bottom</a></li>
+                            <li><a href="/">Accessory</a></li>
+                            <li><a href="/">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="/">Lookbook</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="/">Info</a>
+                        <ul class="depth2">
+                            <li><a href="/">Notice</a></li>
+                            <li><a href="/">Q&A</a></li>
+                            <li><a href="/">Review</a></li>
+                            <li><a href="/">Event</a></li>
+                            <li><a href="/">Contact Us</a></li>
+                            <li><a href="/">Press</a></li>
+                            <li><a href="/">Stockist</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/" title="찜한 상품 보기"><img class="like" src="/cherry/images/favorite.svg" alt="찜한 상품"></a></li>
+                    <li><a href="/" title="장바구니로 이동"><img class="shoppingBag" src="/cherry/images/shoppingBag.svg" alt="장바구니"></a></li>
+                    <li><a href="/" title="내 페이지 보기"><img class="myPage" src="/cherry/images/smile.svg" alt="내 페이지 보기"></a></li>
+                    <li><a href="/" title="홈페이지 언어 바꾸기"><img class="language" src="/cherry/images/Flag_of_South_Korea.svg"
+                                alt="언어 바꾸기 버튼(현재 한국어)"></a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="mainCherry">
+            <div id="backgroundCherry" class="firstLine">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+            </div>
+            <div id="backgroundCherry" class="SecondLine">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+            </div>
+            <div id="backgroundCherry" class="thirdLine">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+                <img class="cherrySize" src="/cherry/images/cherry2D.png" alt="체리 메인 배경 사진">
+            </div>
+
+            <!-- <div class="cherryAnimation">
+                <div class="cherry animate__bounce">
+                    <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+                    <h2>K</h2>
+                </div>
+                <div class="cherry">
+                    <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+                    <h2>I</h2>
+                </div>
+                <div class="cherry animate__bounce">
+                    <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+                    <h2>R</h2>
+                </div>
+                <div class="cherry">
+                    <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+                    <h2>S</h2>
+                </div>
+                <div class="cherry animate__bounce">
+                    <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+                    <h2>H</h2>
+                </div> -->
+        </div>
+    </div>
+    <div id="mainVideo">
+        <a href="https://www.youtube.com/watch?v=NnzbPKQv-3o" target="_blank" title="키르시 유튜브로 새창 이동">
+            <video id="vid" width="100%" height="100%" loop autoplay="autoplay" muted="muted">
+                <source src="/cherry/images/video.webm" type="video/webm">
+                <source src="/cherry/images/video.mp4" type="video/mp4">
+            </video>
+            <!-- <script>
+                document.getElementById('vid').play();
+            </script> -->
+        </a>
+    </div>
+    <div class="swiper mainRecommend">
+        <div class="title">
+            <h1>Best Seller</h1>
+            <h3>가장 인기있는 아이템</h3>
+        </div>
+        <div class="swiper-wrapper slide1">
+            <div class="swiper-slide BestSellerSlide">
+                <div class="bestSeller one">
+                    <a href="#">
+                        <h4>1위</h4>
+                        <div class="circle best1">
+                            <!-- <img class="border" src="/cherry/images/circleThema.png" alt="동그라미 라인"> -->
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller two">
+                    <a href="#">
+                        <h4>2위</h4>
+                        <div class="circle best2">
+                            <!-- <img class="border" src="/cherry/images/circleThema2.png" alt="동그라미 라인"> -->
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller three">
+                    <a href="#">
+                        <h4>3위</h4>
+                        <div class="circle best3">
+                            <!-- <img class="border" src="/cherry/images/circleThema3.png" alt="동그라미 라인"> -->
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller four">
+                    <a href="#">
+                        <h4>4위</h4>
+                        <div class="circle best4">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller five">
+                    <a href="#">
+                        <h4>5위</h4>
+                        <div class="circle best5">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide BestSellerSlide">
+                <div class="bestSeller one">
+                    <a href="#">
+                        <h4>6위</h4>
+                        <div class="circle best6">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller two">
+                    <a href="#">
+                        <h4>7위</h4>
+                        <div class="circle best7">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller three">
+                    <a href="#">
+                        <h4>8위</h4>
+                        <div class="circle best8">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller four">
+                    <a href="#">
+                        <h4>9위</h4>
+                        <div class="circle best9">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="bestSeller five">
+                    <a href="#">
+                        <h4>10위</h4>
+                        <div class="circle best10">
+                        </div>
+                        <p class="name">아치 로고 체리 티셔츠 KH [화이트]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="swiper Pocket">
+        <div class="title">
+            <h1>Kirsh Pocket</h1>
+            <h3>수납력 좋은 키르시 가방들</h3>
+        </div>
+        <div class="swiper-wrapper slide2">
+            <div class="swiper-slide KirshPocketSlide">
+                <div class="KirshPocket one">
+                    <a href="#">
+                        <div class="circle pocket1">
+                            <img class="border" src="/cherry/images/circleThema.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [BLACK]</p>
+                        <p cl000000ass="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket two">
+                    <a href="#">
+                        <div class="circle pocket2">
+                            <img class="border" src="/cherry/images/circleThema2.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [PINK]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket three">
+                    <a href="#">
+                        <div class="circle pocket3">
+                            <img class="border" src="/cherry/images/circleThema3.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [CREAM]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket four">
+                    <a href="#">
+                        <div class="circle pocket4">
+                            <img class="border" src="/cherry/images/circleThema.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">KIRSH POCKET STRING BACKPACK [BLACK]</p>
+                        <p class="price">68,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket five">
+                    <a href="#">
+                        <div class="circle pocket5">
+                            <img class="border" src="/cherry/images/circleThema2.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET OLD SCHOOL BACKPACK [BLACK]</p>
+                        <p class="price">75,000원</p>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide KirshPocketSlide">
+                <div class="KirshPocket one">
+                    <a href="#">
+                        <div class="circle pocket6">
+                            <img class="border" src="/cherry/images/circleThema.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [BLACK]</p>
+                        <p cl000000ass="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket two">
+                    <a href="#">
+                        <div class="circle pocket7">
+                            <img class="border" src="/cherry/images/circleThema2.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [PINK]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket three">
+                    <a href="#">
+                        <div class="circle pocket8">
+                            <img class="border" src="/cherry/images/circleThema3.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET MINI TOTE BAG [CREAM]</p>
+                        <p class="price">50,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket four">
+                    <a href="#">
+                        <div class="circle pocket9">
+                            <img class="border" src="/cherry/images/circleThema.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">KIRSH POCKET STRING BACKPACK [BLACK]</p>
+                        <p class="price">68,000원</p>
+                    </a>
+                </div>
+                <div class="KirshPocket five">
+                    <a href="#">
+                        <div class="circle pocket10">
+                            <img class="border" src="/cherry/images/circleThema2.png" alt="동그라미 라인">
+                        </div>
+                        <p class="name">POCKET OLD SCHOOL BACKPACK [BLACK]</p>
+                        <p class="price">75,000원</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+    <div id="cherryLine">
+        <div class="cherry">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+            <img class="small" src="/cherry/images/Maskgroup.svg" alt="체리 이미지">
+        </div>
+    </div>
+    <div class="swiper lookbook">
+        <h1>LOOKBOOK</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sec01"></div>
+            <div class="swiper-slide sec02"></div>
+            <div class="swiper-slide sec03"></div>
+            <div class="swiper-slide sec04"></div>
+            <div class="swiper-slide sec05"></div>
+            <div class="swiper-slide sec06"></div>
+            <div class="swiper-slide sec07"></div>
+            <div class="swiper-slide sec08"></div>
+            <div class="swiper-slide sec09"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div data-aos="fade-down-right" data-aos-duration="1500">
+        <div class="press">
+            <div class="title">
+                <h1>Press</h1>
+                <h3 class="flex">최근 언론에서의 키르시
+                    <div class="more">
+                        <h5>더보기
+                            <img class="arrow" src="/cherry/images/arrow_right.svg" alt="더보기 화살표">
+                        </h5>
+                    </div>
+                </h3>
+            </div>
+            <div class="pressImg">
+                <div class="circle press1"></div>
+                <div class="circle press2"></div>
+                <div class="circle press3"></div>
+                <div class="circle press4"></div>
+                <div class="circle press5"></div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-down-left" data-aos-duration="1500">
+        <div class="kirshGirl">
+            <div class="title">
+                <h1>Kirsh Girl</h1>
+                <h3 class="flex">실제 착샷
+                    <div class="more">
+                        <h5>더보기<img class="arrow" src="/cherry/images/arrow_right.svg" alt="더보기 화살표">
+                        </h5>
+                    </div>
+                </h3>
+            </div>
+            <div class="kirshGirlImg">
+                <div class="circle kirshGirl1"></div>
+                <div class="circle kirshGirl2"></div>
+                <div class="circle kirshGirl3"></div>
+                <div class="circle kirshGirl4"></div>
+                <div class="circle kirshGirl5"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerFlex">
+            <div class="kirshLogo">
+                <img src="/cherry/images/kirshLogo.png" alt="키르시 로고">
+            </div>
+            <div class="Help">
+                <h4 class="footerTitle">Help</h4>
+                <a href="/">
+                    <p>Shopping Guide</p>
+                </a>
+                <a href="/">
+                    <p>Supports</p>
+                </a>
+            </div>
+            <div class="TermOfUse">
+                <h4 class="footerTitle">Term of Use</h4>
+                <a href="/">
+                    <p>Privacy Pocicy</p>
+                </a>
+                <a href="/">
+                    <p>License</p>
+                </a>
+            </div>
+            <div class="ContactUs">
+                <h4 class="footerTitle">Contact Us</h4>
+                <a href="/">
+                    <p>kirsh.official@gmail.com</p>
+                </a>
+                <a href="/">
+                    <p>(+82) 070-8801-5967</p>
+                </a>
+                <a href="/">
+                    <p>7F,242, Pangyo-ro,<br>
+                        Bundang-gu,<br>
+                        Seongnam-si,<br>
+                        Gyeonggi-do, Republic<br>
+                        of Korea 주식회사 키르시</p>
+                </a>
+            </div>
+            <div class="Stockist">
+                <h4 class="footerTitle">Stockist</h4>
+                <a href="/">
+                    <p>Online</p>
+                </a>
+                <a href="/">
+                    <p>Offline Location</p>
+                </a>
+            </div>
+            <div class="SNS">
+                <h4 class="footerTitle">SNS</h4>
+                <a href="/">
+                    <p>Instagram</p>
+                </a>
+                <a href="/">
+                    <p>Facebook</p>
+                </a>
+                <a href="/">
+                    <p>Youtube</p>
+                </a>
+                <a href="/">
+                    <p>Kakao Talk</p>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>©2018 kirsh All Right Reserved</p>
+        </div>
+
+    </footer>
+
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/cherry/js/kirshProject.js"></script>
+    <script src="/cherry/js/kirshSlideLB.js"></script>
+    <script src="/cherry/js/kirshSlideBest.js"></script>
+    <script src="/cherry/js/kirshSlidePocket.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

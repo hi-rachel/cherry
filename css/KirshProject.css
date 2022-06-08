@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* .inner{
+    min-width: 1200px;
+} */
+
+:root {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    border : 1px solid black;
+}
+
+p {
+    font-size: 15px;
+}
+
+.footerTitle {
+    font-size: 18px;
+    font-weight: medium;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.flexL {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexR {
+    margin-right: 30px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 20px;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+#searchForm {
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+#searchType {
+    width: 250px;
+    height: 30px;
+    text-indent: 3px;
+    height: 33px;
+}
+
+#searchButton {
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    background-color: #F792A8;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.flexNav {
+    width: 100%;
+    height: 50px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    word-break: keep-all;
+}
+
+.like, .shoppingBag, .myPage, .language {
+    margin: 0 30px 0 0;
+}
+
+#nav li.depth1 {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 70px 0 0;
+    display: inline-flex;
+    position: relative;
+    z-index: 50;
+}
+
+#nav li.depth1::after {
+    width: 0%;
+    height: 3px;
+    /* background: rgba(195, 73, 72, 1); */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    z-index: 10;
+}
+
+#nav li a:visited,
+#nav li a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav li.depth1 ul.depth2 {
+    min-width: 200px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 15px rgba(0,0,0, 0.1);
+    display: none;
+}
+
+#nav li.depth1 ul.depth2 li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+#nav li.depth1:hover::after {
+    width: 110%;
+    transition: width 0.3s;
+}
+
+#nav li.depth1:hover ul.depth2 {
+    display: block;
+}
+
+#nav li.depth1 ul.depth2 li:hover {
+    width: auto;
+    background: rgba(247, 146, 168, 0.8)
+}
+
+/* #nav li.depth1 ul.depth2 li:hover a{
+    color: #fff;
+} */
+
+.flexNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexR #nav li a img {
+    width: 25px;
+    height: 25px;
+}
+
+#nav li.depth1 a:hover {
+    color: #F792A8;
+}
+
+#nav li.depth1 ul.depth2 a:hover {
+    color: white;
+}
+
+footer a:hover {
+    color: #F792A8;
+}
+
+/* div{
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+} */
+
+#mainCherry {
+    overflow: hidden;
+    height: 988px;
+    background-color: #F792A8;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+/* .cherryAnimation {
+    padding : 60px 0;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+.cherry {
+    display: flex;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+
+#cherryLine {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.small {
+    flex-shrink: 0;
+    width: 48px;
+    vertical-align: bottom;
+}
+
+#backgroundCherry {
+    padding-top: 100px;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cherrySize {
+    width: 150px;
+    height: auto;
+    /* margin-left: 30px; */
+}
+
+
+#mainVideo {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+@keyframes move {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
+#cherryLine .cherry {
+    animation : move 12s linear infinite;
+}
+
+.arrow {
+    padding: 2px 10px;
+}
+
+.kirshLogo img {
+    width: 144px;
+    height: 143px;
+    margin: 0;
+}
+
+.footerFlex {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    /* gap: 55px; */
+}
+
+.footerFlex p {
+    margin-bottom: 18px;
+}
+
+.footerFlex div {
+    margin: 0;
+}
+
+.copyright {
+    width: 1200px;
+}
