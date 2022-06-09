@@ -304,3 +304,7 @@ footer a:hover {
 .copyright {
     width: 1200px;
 }
+
+address {
+    font-style: normal;
+}
