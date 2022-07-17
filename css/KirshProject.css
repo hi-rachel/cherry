@@ -17,7 +17,6 @@ body {
 :root {
   font-family: "Noto Sans", sans-serif;
   font-family: "Noto Sans KR", sans-serif;
-  border: 1px solid black;
 }
 
 p {
@@ -309,6 +308,7 @@ footer a:hover {
 
 .copyright {
   width: 1200px;
+  margin-bottom: 30px;
 }
 
 address {
